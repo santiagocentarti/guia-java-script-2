@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    santiago centarti / 6to B / santiagocentarti@colegiodesanjose.edu.ar
+    Ejercicio 25:
+    Confeccionar un programa que permita cargar un número positivo de hasta tres (3)
+    cifras. Informar la cantidad de cifras que contiene y un mensaje de error si el número
+    supera las 3 cifras o si es negativo.
+    -->
+    <script>
+      let num1 = parseInt(prompt("Ingrese un numero positivo de hasta 3 cifras: "));
+      if (0 <= num1 && num1 < 10) {
+        document.write("Tiene una sola cifra");
+      } 
+      else if (9 < num1 && num1 < 100) {
+        document.write("Tiene 2 cifras");
+      } 
+      else if (num1 > 99 && num1 < 1000) {
+        document.write("Tiene 3 cifras");
+      } 
+      else {
+        document.write("El numero supera las 3 cifras o es negativo, ingrese un numero correcto ");
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    santiago centarti / 6to B / santiagocentarti@colegiodesanjose.edu.ar
+    Ejercicio 20:
+    Ingresar por teclado el nombre de alguno de estos tres diarios de la república
+    Argentina y redireccionar la página según corresponda al diario cargado.
+    (Utilizar el comando “location.href”)
+    -->
+    <script>
+        let diario = prompt("Ingrese el nombre del diario que desea leer: (la nacion, pagina12, infobae) ").toLowerCase();
+            if (diario == "la nacion"){
+            location.href = "https://www.lanacion.com.ar/";
+            }
+            else if (diario == "pagina12"){
+            location.href = "https://www.pagina12.com.ar/";
+            }
+            else if (diario == "infobae"){
+            location.href = "https://www.infobae.com/";
+            }
+            else {document.write("Ingrese un dato valido")}
+    </script>
+</body>
+</html>

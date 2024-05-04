@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    santiago centarti / 6to B / santiagocentarti@colegiodesanjose.edu.ar
+    Ejercicio 18:
+    Confeccionar un programa que muestre la cantidad de horas que tiene un día, la
+    cantidad de minutos y la cantidad de segundos.
+    La cantidad de días se ingresa por teclado.
+    -->
+    <script>
+        let dias = prompt('Ingrese la cantidad de días: ');
+
+        let horas = parseInt(dias * 24);
+        let minutos = parseInt(horas * 60);
+        let segundos = parseInt(minutos * 60);
+        
+        document.write("La cantidad de horas es: ",horas);
+        document.write("La cantidad de minutos es: ",minutos);
+        document.write("La cantidad de segundos es: ",segundos);
+    </script>
+</body>
+</html>
